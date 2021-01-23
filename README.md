@@ -12,12 +12,13 @@ Reduces the number of data points in a data set to a specified number.
 
 ## Description
 
-`X_shrunk = shrink_data_set(X,N)` shrinks a matrix `X` (storing a data set) so that it only has `N` rows. This syntax assumes the various variables are organized into separate columns. Therefore, `X_shrunk` will be the original matrix `X` shrunk down to `N` data points.
+`X_shrunk = shrink_data_set(X,N)` shrinks a matrix `X` (storing a data set) so that it is left with only `N` rows. This syntax assumes the various variables are organized into separate columns. Therefore, `X_shrunk` will be the original matrix `X` shrunk down to `N` data points.
 
-`X_shrunk = shrink_data_set(X,N,'rows')` shrinks a matrix `X` (storing a data set) so that it only has `N` rows. The input `'rows'` tells the function to remove rows (which implies that the different variables are organized into separate columns). Therefore, `X_shrunk` will be the original matrix `X` shrunk down to `N` data points.
+`X_shrunk = shrink_data_set(X,N,'columns')` shrinks a matrix `X` (storing a data set) so that it is left with only `N` rows. The input `'columns'` indicates that the variables are organized into separate columns, which implies that to remove data points, we need to remove rows. Therefore, `X_shrunk` will be the original matrix (i.e. data set) `X` shrunk down to `N` data points.
 
-`X_shrunk = shrink_data_set(X,N,'columns')` shrinks a matrix `X` (storing a data set) so that it only has `N` columns. The input `'columns'` tells the function to remove columns (which implies that the different variables are organized into separate rows). Therefore, X_shrunk will the original matrix (i.e. data set) `X` shrunk down to `N` data points.
+`X_shrunk = shrink_data_set(X,N,'rows')` shrinks a matrix `X` (storing a data set) so that it is left with only `N` columns. The input `'rows'` indicates that the variables are organized into separate rows, which implies that to remove data points, we need to remove columns. Therefore, `X_shrunk` will be the original matrix (i.e. data set) `X` shrunk down to `N` data points.
 
+**NOTE:** Sometimes, the function will not be able to return exactly Npoints (due to rounding issues). However, the purpose of this function is mainly to reduce the size of a data set when not all the points are needed. For example, plotting <img src="https://latex.codecogs.com/svg.latex?y=x^{2}" title="y=x^{2}" /> with 100 points rather than 1000 points will (to the naked eye) not be visually any worse, but will be a lot faster for the computer to perform.
 
 ## Examples
 
