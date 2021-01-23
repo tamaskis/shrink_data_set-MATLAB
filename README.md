@@ -12,9 +12,9 @@ Reduces the number of data points in a data set.
 
 ## Description
 
-`X_shrunk = shrink_data_set(X,N)` returns one random double-precision floating-point number between <img src="https://latex.codecogs.com/svg.latex?a" title="a" /> and <img src="https://latex.codecogs.com/svg.latex?b" title="b" />.
+`X_shrunk = shrink_data_set(X,N)` shrinks a matrix `X` (storing a data set) so that it only has `N` rows. This syntax assumes the various variables are organized into separate columns. Therefore, `X_shrunk` will be the original matrix `X` shrunk down to `N` data points.
 
-`X_shrunk = shrink_data_set(X,N,'rows')` returns one random number of data type `typename` between <img src="https://latex.codecogs.com/svg.latex?a" title="a" /> and <img src="https://latex.codecogs.com/svg.latex?b" title="b" />. The `typename` input can be `'int'` (integers), `'single'` (single-precision floating point numbers), or `'double'` (double-precision floating point numbers).
+`X_shrunk = shrink_data_set(X,N,'rows')` shrinks a matrix `X` (storing a data set) so that it only has `N` rows. This syntax assumes the various variables are organized into separate columns. Therefore, `X_shrunk` will be the original matrix `X` shrunk down to `N` data points.
 
 `X_shrunk = shrink_data_set(X,N,'columns')` returns an <img src="https://latex.codecogs.com/svg.latex?m\times&space;n" title="m\times n" /> matrix of random double-precision floating-point numbers between <img src="https://latex.codecogs.com/svg.latex?a" title="a" /> and <img src="https://latex.codecogs.com/svg.latex?b" title="b" />.
 
