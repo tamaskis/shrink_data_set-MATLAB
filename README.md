@@ -1,4 +1,4 @@
-# `shrink_data_set`
+# `shrink_data_set` [![View Reduce Number of Data Points (shrink_data_set) on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/86218-reduce-number-of-data-points-shrink_data_set)
 
 Reduces the number of data points in a data set to a specified number.
 
