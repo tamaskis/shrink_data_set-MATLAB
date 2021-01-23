@@ -14,9 +14,9 @@ Reduces the number of data points in a data set.
 
 `X_shrunk = shrink_data_set(X,N)` shrinks a matrix `X` (storing a data set) so that it only has `N` rows. This syntax assumes the various variables are organized into separate columns. Therefore, `X_shrunk` will be the original matrix `X` shrunk down to `N` data points.
 
-`X_shrunk = shrink_data_set(X,N,'rows')` shrinks a matrix `X` (storing a data set) so that it only has `N` rows. This syntax assumes the various variables are organized into separate columns. Therefore, `X_shrunk` will be the original matrix `X` shrunk down to `N` data points.
+`X_shrunk = shrink_data_set(X,N,'rows')` shrinks a matrix `X` (storing a data set) so that it only has `N` rows. The input `'rows'` tells the function to remove rows (which implies that the different variables are organized into separate columns). Therefore, `X_shrunk` will be the original matrix `X` shrunk down to `N` data points.
 
-`X_shrunk = shrink_data_set(X,N,'columns')` returns an <img src="https://latex.codecogs.com/svg.latex?m\times&space;n" title="m\times n" /> matrix of random double-precision floating-point numbers between <img src="https://latex.codecogs.com/svg.latex?a" title="a" /> and <img src="https://latex.codecogs.com/svg.latex?b" title="b" />.
+`X_shrunk = shrink_data_set(X,N,'columns')` shrinks a matrix `X` (storing a data set) so that it only has `N` columns. The input `'columns'` tells the function to remove columns (which implies that the different variables are organized into separate rows). Therefore, X_shrunk will the original matrix (i.e. data set) `X` shrunk down to `N` data points.
 
 
 ## Examples
