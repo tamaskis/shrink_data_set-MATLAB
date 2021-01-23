@@ -1,6 +1,6 @@
 # `shrink_data_set`
 
-Reduces the number of data points in a data set.
+Reduces the number of data points in a data set to a specified number.
 
 
 ## Syntax
