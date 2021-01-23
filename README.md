@@ -27,7 +27,7 @@ Let's consider a data set with 10001 data points that are usually distributed in
 First, we need to define the data set. Let's definte it as row vectors.
 
     x = 0:0.01:10;
-    y = sin(x)+x;
+    y = x+sin(x);
     
 To use the `shrink_data_set` function, we must first compile this data set into a matrix. Since `x` and `y` are defined as row vectors,
 
