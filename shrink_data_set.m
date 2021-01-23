@@ -1,6 +1,6 @@
 % shrink_data_set  Reduces the number of data points in a data set to a 
 % specified number.
-
+%
 %   X_shrunk = shrink_data_set(X,N) shrinks a matrix X (storing a data set)
 %   so that it is left with only N rows. This syntax assumes the various 
 %   variables are organized into separate columns. Therefore, X_shrunk will
